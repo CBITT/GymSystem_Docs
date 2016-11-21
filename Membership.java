@@ -1,18 +1,20 @@
 /**
  * Created by BangoCs on 11/17/2016.
  */
-public class Membership {
+public class Membership extends Member{
 
     String type;
     String period;
     int session;
     double price;
+    String memberName;
 
-    public Membership(String type, String period, int session, double price){
+    public Membership(String type, String period, int session, String memberName,double price){
         this.type = type;
         this.period = period;
         this.session = session;
         this.price = price;
+        memberName = super.getMemberName();
     }
     public Membership(){
         setType(type);
