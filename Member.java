@@ -9,19 +9,20 @@ package gymsystem;
  *
  * @author Peter Mikulasko
  */
-public class RegisterMember {
+public class Member {
     private String name;
     private String surname;
     private int age;
 
     
-    public RegisterMember(){    
+    public Member(){    
     }
     
-    public RegisterMember(String name, String surname, int age) {
+    public Member(String name, String surname, int age) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+
     }
 
     public String getName() {
@@ -45,6 +46,8 @@ public class RegisterMember {
     }
 
     public void setAge(int age) {
+        if (age <= 0 || age > 150)
+            throw new IllegalArgumentException("Age is not valid"); 
         this.age = age;
     }
 
