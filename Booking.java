@@ -21,7 +21,7 @@ private List instructors;
         instructors.add(instructor);
 
     }
-    public Instructor findInstrunctor(Instructor requestedInstructor){
+    public Instructor bookInstrunctor(Instructor requestedInstructor){
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
