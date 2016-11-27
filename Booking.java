@@ -1,6 +1,5 @@
 import java.util.ArrayList;
 import java.util.Iterator;
-import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -21,12 +20,10 @@ private List instructors;
         instructors.add(instructor);
 
     }
-    public Instructor bookInstrunctor(Instructor requestedInstructor){
+    public Instructor bookInstrunctor(String sport, String dayOfTraining){
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
-            String sport = requestedInstructor.getSport();
-            String dayOfTraining = requestedInstructor.getDayOfTraining();
 
             if (sport.equals(instructor.getSport()) && dayOfTraining.equals(instructor.getDayOfTraining()))
             return instructor;
