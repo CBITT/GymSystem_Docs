@@ -25,13 +25,10 @@ private List instructors;
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
-            String name = requestedInstructor.getName();
-            double pricePerClass = requestedInstructor.getPricePerClass();
             String sport = requestedInstructor.getSport();
             String dayOfTraining = requestedInstructor.getDayOfTraining();
 
-            if (name.equals(instructor.getName()) && pricePerClass == instructor.getPricePerClass()
-                    && sport.equals(instructor.getSport()) && dayOfTraining.equals(instructor.getDayOfTraining()))
+            if (sport.equals(instructor.getSport()) && dayOfTraining.equals(instructor.getDayOfTraining()))
             return instructor;
 
 
