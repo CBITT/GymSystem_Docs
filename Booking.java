@@ -13,19 +13,19 @@ private List instructors;
         List<Instructor> instructors = new ArrayList<>();
     }
 
-    public void addInspector(String name, double pricePerClass,String sport,String dayOfTraining){
+    public void addInspector(String name, double pricePerClass,Sport sport,DayOfClass dayOfTraining){
 
        Instructor instructor = new Instructor(name,pricePerClass,sport,dayOfTraining);
 
         instructors.add(instructor);
 
     }
-    public Instructor bookInstrunctor(String sport, String dayOfTraining){
+    public Instructor bookInstrunctor(Sport sport, DayOfClass dayOfTraining){
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
 
-            if (sport.equals(instructor.getSport()) && dayOfTraining.equals(instructor.getDayOfTraining()))
+            if (sport.equals(instructor.getSpecs().getSport()) && dayOfTraining.equals(instructor.getSpecs().getDayOfClass()))
             return instructor;
 
 

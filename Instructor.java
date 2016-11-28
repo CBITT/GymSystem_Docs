@@ -4,21 +4,18 @@
 public class Instructor {
     private String name;
     private double pricePerClass;
-    private String sport;
-    private String dayOfTraining;
+   InstructorSpec specs;
 
-public Instructor(String name, double pricePerClass, String sport, String dayOfTraining){
+public Instructor(String name, double pricePerClass, Sport sport, DayOfClass dayOfTraining){
     this.name.equals(name);
     this.pricePerClass = pricePerClass;
-    this.sport = sport;
-    this.dayOfTraining.equals(dayOfTraining);
+   this.specs = new InstructorSpec(sport,dayOfTraining);
 }
 
 public Instructor(){
     setName(name);
     setPricePerClass(pricePerClass);
-    setSport(sport);
-    setDayOfTraining(dayOfTraining);
+
 }
 
 
@@ -39,20 +36,8 @@ public Instructor(){
         this.pricePerClass = pricePerClass;
     }
 
-    public String getSport() {
-        return sport;
-    }
-
-    public void setSport(String sport) {
-        this.sport = sport;
-    }
-
-    public String getDayOfTraining() {
-        return dayOfTraining;
-    }
-
-    public void setDayOfTraining(String dayOfTraining) {
-        this.dayOfTraining = dayOfTraining;
+    public InstructorSpec getSpecs() {
+        return specs;
     }
 
 
