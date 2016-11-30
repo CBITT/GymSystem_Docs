@@ -7,10 +7,11 @@ import java.util.List;
  */
 public class Booking {
 
-private List instructors;
+private List<Instructor> instructors;
 
     public  Booking(){
-        List<Instructor> instructors = new ArrayList<>();
+        //List<Instructor> instructors = new ArrayList<>();
+        instructors = new ArrayList<>();
     }
 
     public void addInspector(String name, double pricePerClass,Sport sport,DayOfClass dayOfTraining){

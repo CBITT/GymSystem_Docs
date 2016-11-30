@@ -7,7 +7,7 @@ public class Instructor {
    InstructorSpec specs;
 
 public Instructor(String name, double pricePerClass, Sport sport, DayOfClass dayOfTraining){
-    this.name.equals(name);
+    this.name = name;
     this.pricePerClass = pricePerClass;
    this.specs = new InstructorSpec(sport,dayOfTraining);
 }
