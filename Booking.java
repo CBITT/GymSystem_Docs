@@ -7,7 +7,7 @@ import java.util.List;
  */
 public class Booking {
 
-private List<Instructor> instructors;
+private List <Instructor> instructors;
 
     public  Booking(){
         //List<Instructor> instructors = new ArrayList<>();
@@ -21,13 +21,18 @@ private List<Instructor> instructors;
         instructors.add(instructor);
 
     }
-    public Instructor bookInstrunctor(Sport sport, DayOfClass dayOfTraining){
+    public ArrayList <Instructor> bookInstructor(Sport sport, DayOfClass dayOfTraining){
+
+        ArrayList <Instructor> availableInstructors = new ArrayList<>();
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
 
             if (sport.equals(instructor.getSpecs().getSport()) && dayOfTraining.equals(instructor.getSpecs().getDayOfClass()))
-            return instructor;
+
+                availableInstructors.add(instructor);
+
+                return availableInstructors;
 
 
         }

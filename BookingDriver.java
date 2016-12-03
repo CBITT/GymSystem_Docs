@@ -18,23 +18,25 @@ public class BookingDriver {
         b.addInspector("Peter",35.00,Sport.WEIGHTS,DayOfClass.THURSDAY);
         b.addInspector("Colin",55.00,Sport.SWIMMING,DayOfClass.FRIDAY);
 
+//adding same specs for testing
+        b.addInspector("Clare",10.50,Sport.SPINNING,DayOfClass.MONDAY);
 
-       List<Instructor> instructors = new ArrayList<>();
 
 
-        Instructor instructorToBook = b.bookInstrunctor(Sport.SPINNING,DayOfClass.MONDAY);
 
-        instructors.add(instructorToBook);
+        ArrayList<Instructor> instructorToBook = b.bookInstructor(Sport.SPINNING,DayOfClass.MONDAY);
 
-        if (!instructors.isEmpty()){
+
+
+        if (!instructorToBook.isEmpty()){
             System.out.print("Available instructors: \n\n");
 
-            for (Iterator i = instructors.iterator(); i.hasNext(); ) {
+            for (Iterator i = instructorToBook.iterator(); i.hasNext(); ) {
                 Instructor instructor = (Instructor) i.next();
 
                 InstructorSpec spec = instructor.getSpecs();
-                System.out.println(" Name:" +
-                        instructor.getName()+ "\nPrice per session: "+instructor.getPricePerClass()
+                System.out.println("Name: " +
+                        instructor.getName()+ "\nPrice per session: €"+instructor.getPricePerClass()
                         + "\nSport: "+spec.getSport()+ "\nDay of training: "+ spec.getDayOfClass());
             }
         } else {
