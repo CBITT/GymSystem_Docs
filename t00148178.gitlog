@@ -1,0 +1,392 @@
+commit 2619ddaeef343e67bf14e67674369f093088d754
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Dec 3 21:40:33 2016 +0000
+
+    refactor package
+    
+    package renamed to OOAD
+
+commit e8f8b45a4c289235ae065f8f6af53867c1d4e7c8
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Dec 3 21:28:28 2016 +0000
+
+    added new fields
+    gender and emergencyContect
+
+commit 0f14277e4273265e55aae077ca64c2d3aeafc88b
+Merge: 3fa0269 4fe8f05
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Dec 3 21:02:28 2016 +0000
+
+    Merge branch 'master' into Peter-Mikulasko
+
+commit 4fe8f055806144b03b43c43b6e7c8e3bdedf05b8
+Merge: a99d88a 75d4c94
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Dec 3 20:51:49 2016 +0000
+
+    Merge remote-tracking branch 'refs/remotes/CBITT/master'
+
+commit 75d4c944e618975c236c119c090b0d3674d05b3d
+Merge: f19107f a99d88a
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 23 01:22:33 2016 +0000
+
+    Merge pull request #10 from t00148178/master
+    
+    new class and edits
+
+commit a99d88a56ed7c59f8ed6ca5427082311da2a23c0
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 23 01:20:04 2016 +0000
+
+    added registerMembers class
+
+commit 568b9e5104d81dec1eadda5779ac97a421ff5836
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 23 01:18:56 2016 +0000
+
+    age check added
+    age check added to allow only real age number
+
+commit 04e6c47611a21bcdfd84518ffe11e721b69772b5
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 23 01:14:28 2016 +0000
+
+    class name renamed
+    refactoring class RegisterMember to Member
+
+commit f19107f9b1873c3c25428c3c4376795fd5ea6321
+Merge: ea6d7c7 4b5f7cf
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Nov 19 15:18:16 2016 +0000
+
+    Merge pull request #9 from t00148178/master
+    
+    Added RegisterMember
+
+commit 4b5f7cfe2730206138e9ee597e9a5b1f3b8f7dbe
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Nov 19 15:14:50 2016 +0000
+
+    Added RegisterMember
+
+commit ea6d7c7e73c5abafd02ab55dd5aa949811d1d492
+Merge: 4c87b95 c443e94
+Author: CBITT <csbango@yahoo.com>
+Date:   Thu Nov 17 22:45:09 2016 +0000
+
+    Merge pull request #8 from CBITT/csaba_gym_sys
+    
+    Membership class created
+
+commit c443e945c0ae35f8e62373461392e69240126d6e
+Author: cbitt <csbango@yahoo.com>
+Date:   Thu Nov 17 22:36:42 2016 +0000
+
+    Membership class created
+
+commit 3fa02696a2cf4bbe0fc3e2563db004381c3901d2
+Merge: 0a1d3b7 4ecb616
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 16 11:24:54 2016 +0000
+
+    Merge pull request #1 from t00148178/uc-from-peter
+    
+    Uc from peter
+
+commit 4ecb61699eb61898117526bc72da64e45bba4c29
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Nov 16 11:19:42 2016 +0000
+
+    Delete test2.html
+
+commit 4c87b95fff7f09dd0d30f6dbd4147eeb6840312b
+Author: cbitt <csbango@yahoo.com>
+Date:   Wed Nov 9 10:11:31 2016 +0000
+
+    Removed possible attributes
+
+commit fa6dee31c1a8b2b586b6d10c91de8f9802646d09
+Merge: b4ee6a0 f324737
+Author: cbitt <csbango@yahoo.com>
+Date:   Wed Oct 26 12:31:28 2016 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit b4ee6a0dc10aa6213f3bfad71d1737b9c1b07203
+Author: cbitt <csbango@yahoo.com>
+Date:   Wed Oct 26 12:30:58 2016 +0100
+
+    UC5 minor change
+
+commit f32473783879c8773b37c309972c433422dac8c4
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Wed Oct 26 12:23:41 2016 +0100
+
+    Delete usecase12.html
+
+commit f73048b3a41755f502130564839c00e37ecc41f7
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Wed Oct 26 12:23:29 2016 +0100
+
+    Delete usecase11.html
+
+commit 2ff96a208006167dba57c4098cc484c14a2e2566
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 26 12:19:24 2016 +0100
+
+    Rename usecase18.html to uc18.html
+
+commit 501f041840215b581940db421230d5faabb4b04a
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Wed Oct 26 11:49:41 2016 +0100
+
+    Update Documents.html
+
+commit 1f1b162223f6036023b2ca586c0546c44f2824ea
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Wed Oct 26 11:43:19 2016 +0100
+
+    Delete usecase17.html
+
+commit af628748e347140871277ae6bb79a9bde7ed18c0
+Author: cbitt <csbango@yahoo.com>
+Date:   Wed Oct 26 11:26:10 2016 +0100
+
+    UC 15 calc salary modified
+
+commit 119a8c6451f5dc34671eaaf8112d6699f5f727be
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 26 10:13:25 2016 +0100
+
+    create usecase18.html
+
+commit 5e77edf00b8c52963537dbf80336ee147234db2d
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 26 10:12:56 2016 +0100
+
+    create usecase17.html
+
+commit 795da1586ea42ff6000004328a9c9f4e043fd401
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 26 10:11:41 2016 +0100
+
+    create usecase10.html
+
+commit a9702675413c750025f827a64c7ed0b7ad88ea7e
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 23:36:12 2016 +0100
+
+    new UC Set Workout added
+
+commit 152ca84ddf08a6c2326a48405b79b0edb5b4d072
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 22:33:33 2016 +0100
+
+    Use Case 15 - Calculate salary of employees / Casual Use Case
+
+commit de6919e1bff210e88b0bfb876d88cc0980a661cd
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 22:32:17 2016 +0100
+
+    Use Case 5 - Buy Membership / Fully dressed Use Case
+
+commit ab21c815064a7622648e4d03f9d392576991f3f8
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 22:28:06 2016 +0100
+
+    UC 7 replaced with new UC. UC 14 has been moved to the member section. UC 16 has been removed.
+
+commit ff3b36f30113a1d4ebe6c0c5e14c73fd4e5376aa
+Merge: ee9d922 2f1f07c
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 22:22:33 2016 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit ee9d9223a9c6006fc39bf51fb5a3b8c8e09e25a6
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 25 22:21:54 2016 +0100
+
+    Use Case 19 - Top up account / Brief Use Case
+
+commit 2f1f07ccc99becafef777d4a8560568d5f315160
+Merge: aaaf20b 373b3b1
+Author: CBITT <csbango@yahoo.com>
+Date:   Mon Oct 24 11:38:58 2016 +0100
+
+    Merge pull request #5 from CBITT/Neil-Sankar
+    
+    Neil sankar
+
+commit 373b3b11ea065d2d28c6f3f69b01762e1b60ad68
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Mon Oct 24 11:37:04 2016 +0100
+
+    Use Case - Set Workout - Fully Dressed
+
+commit 6285c775a3234a0b8bb34bcd3645c490813b3d9f
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Mon Oct 24 11:35:38 2016 +0100
+
+    Use Case - Unban Member
+
+commit c06184dd4ef27c27078514f3fc8cecc03b566308
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Mon Oct 24 11:31:58 2016 +0100
+
+    Add files via upload
+    
+    Use Case - Ban Member - Brief & Casual
+
+commit aaaf20b7c36e25e607cdf1cfd034d95c29f1d1fb
+Merge: b251d96 b2fa519
+Author: CBITT <csbango@yahoo.com>
+Date:   Mon Oct 24 11:26:47 2016 +0100
+
+    Merge pull request #4 from CBITT/Peter-Mikulasko
+    
+    Peter mikulasko
+
+commit b251d96edbc9e79778fc7723433f75ab9318e634
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Mon Oct 24 11:22:13 2016 +0100
+
+    Update Documents.html
+
+commit 35e4a8360c0620c310c8f410123f87f79a632261
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:51:50 2016 +0100
+
+    Use Case 5 - Buy Membership / Fully dressed Use Case
+
+commit 2c4841e002efe07391721d6f9a74baff169a7b40
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:47:22 2016 +0100
+
+    Use Case 5 - Buy Membership / Fully dressed Use Case
+
+commit a2235502fc5c4200f5692761d2328cd26b784a88
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:42:37 2016 +0100
+
+    Use Case 5 - Buy Membership / Fully dressed Use Case
+
+commit 0c26abab7ecf781ff5148ff7a439c3cd240068ac
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:41:46 2016 +0100
+
+    Use Case 4 - Check remaining sessions / Brief Use Case
+
+commit addacbefa5a532b0a8cc61061238a85eeb7681c8
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:41:00 2016 +0100
+
+    Use Case 3 - Book Equipment / Casual Use Case
+
+commit 2dde6e8bd80ac7f690138f884a96fadcc24f1281
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:37:36 2016 +0100
+
+    Use Case 2 - Book Room / Casual Use Case
+
+commit 15a047866164a84ffde8a2d32a1dd685004c781a
+Author: cbitt <csbango@yahoo.com>
+Date:   Mon Oct 24 01:35:59 2016 +0100
+
+    New use case added - top up account
+    Numbering fixed
+
+commit b2fa519d1edc24426504d3188342a65335d27f1f
+Merge: 0a1d3b7 8b77d68
+Author: CBITT <csbango@yahoo.com>
+Date:   Sun Oct 23 22:45:20 2016 +0100
+
+    Merge pull request #3 from t00148178/uc-from-peter
+    
+    Uc from peter
+
+commit 8b77d6888a9308bf08b856e9dd98d020531eacef
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 19 10:22:12 2016 +0100
+
+    added pre/post comditions
+
+commit 43bc1010e348cab9c7abba11ff0096465bd1fc53
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Wed Oct 19 10:17:33 2016 +0100
+
+    uc9 added
+
+commit bb8d15aa303bc74ec2c94e302d8201a1615b416e
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 18 12:27:13 2016 +0100
+
+    Book room modified
+
+commit 1442ead27af52ee992aafe71d0c256f93af08bf4
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 18 12:25:17 2016 +0100
+
+    Book room modified
+
+commit b03383cfa965317c4ce7be4d72e66d40a75db79f
+Merge: 881dbac f8ad70b
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 18 11:57:58 2016 +0100
+
+    Merge remote-tracking branch 'origin/master'
+
+commit 881dbaccda0d1e5af40938ece4434b789b6fa7c2
+Author: cbitt <csbango@yahoo.com>
+Date:   Tue Oct 18 11:56:26 2016 +0100
+
+    Booking Instructor - date is an option, must be clarified
+
+commit f4665bd147132341dc2fe9414f59ddeecc13a0e1
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Mon Oct 17 17:39:02 2016 +0100
+
+    added use case 1 fro brief and fully dressed
+
+commit f8ad70b50a00fcbe662b8478d6e33830584ad06c
+Merge: 0a1d3b7 ac8bf96
+Author: CBITT <csbango@yahoo.com>
+Date:   Thu Oct 13 17:13:30 2016 +0100
+
+    Merge pull request #1 from njsankar/patch-1
+    
+    create test2.html
+
+commit ac8bf96df858595c8bead40fa3b8e150c98bc311
+Author: Neil Sankar <njfs7695@gmail.com>
+Date:   Thu Oct 13 17:11:03 2016 +0100
+
+    create test2.html
+    
+    test
+
+commit 0a1d3b735534de05996e60a7589ba4b4d9549e9f
+Author: CBITT <csbango@yahoo.com>
+Date:   Thu Oct 13 01:15:59 2016 +0100
+
+    Create README.md
+
+commit af71ead607019245de98eea9eb07e3cff9810293
+Author: cbitt <csbango@yahoo.com>
+Date:   Thu Oct 13 00:54:40 2016 +0100
+
+    all use cases
+
+commit ea8867fa7290dd725a9faa304cb0938c95bd9cc6
+Author: cbitt <csbango@yahoo.com>
+Date:   Thu Oct 13 00:52:40 2016 +0100
+
+    use case - create account
+
+commit 7a68c8fd25e3b7a89ca21b80183bff81e1a401fe
+Author: cbitt <csbango@yahoo.com>
+Date:   Thu Oct 13 00:46:10 2016 +0100
+
+    Initial commit
