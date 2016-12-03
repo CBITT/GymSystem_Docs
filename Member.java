@@ -1,9 +1,5 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package gymsystem;
+
+package OOAD;
 
 /**
  *
@@ -13,15 +9,18 @@ public class Member {
     private String name;
     private String surname;
     private int age;
-
+    private String gender;
+    private String emergencyContact;
     
     public Member(){    
     }
     
-    public Member(String name, String surname, int age) {
+    public Member(String name, String surname, int age, String gender, String emergencyContact) {
         this.name = name;
         this.surname = surname;
         this.age = age;
+        this.gender = gender;
+        this.emergencyContact = emergencyContact;
 
     }
 
@@ -51,11 +50,21 @@ public class Member {
         this.age = age;
     }
 
+    public String getGender(){ return gender; }
+
+    public void setGender(String gender) { this.gender = gender; }
+
+    public String getEmergencyContact() { return emergencyContact; }
+
+    public void setEmergencyContact(String emergencyContact) { this.emergencyContact = emergencyContact; }
+
     @Override
     public String toString() {        
         return "Member Details:" +"\n" + getName() + ", "
                 +"\n" + getSurname() + ", "
-                +"\n" + getAge() + ", ";
+                +"\n" + getAge() + ", "
+                +"\n" + getGender() + ", "
+                +"\n" + getEmergencyContact();
     }
     
     
