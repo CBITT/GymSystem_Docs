@@ -1,5 +1,6 @@
 import java.util.ArrayList;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.List;
 
 /**
@@ -7,28 +8,30 @@ import java.util.List;
  */
 public class Booking {
 
-private List <Instructor> instructors;
+public List instructors;
 
     public  Booking(){
-        //List<Instructor> instructors = new ArrayList<>();
-        instructors = new ArrayList<>();
+
+        instructors = new LinkedList();
     }
 
-    public void addInspector(String name, double pricePerClass,Sport sport,DayOfClass dayOfTraining){
+    public void addInstructor(String name, double pricePerClass, Sport sport, DayOfClass dayOfTraining){
 
        Instructor instructor = new Instructor(name,pricePerClass,sport,dayOfTraining);
 
         instructors.add(instructor);
 
     }
-    public ArrayList <Instructor> bookInstructor(Sport sport, DayOfClass dayOfTraining){
+    public List bookInstructor(InstructorSpec spec){
 
-        ArrayList <Instructor> availableInstructors = new ArrayList<>();
+        List availableInstructors = new LinkedList();
 
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
 
-            if (sport.equals(instructor.getSpecs().getSport()) && dayOfTraining.equals(instructor.getSpecs().getDayOfClass()))
+            InstructorSpec instructorSpec = instructor.getSpecs();
+
+          //  if (spec.getSport()== instructorSpec.getSport() && spec.getDayOfClass() == instructorSpec.getDayOfClass())
 
                 availableInstructors.add(instructor);
 

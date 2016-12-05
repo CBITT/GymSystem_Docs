@@ -1,7 +1,4 @@
-import java.awt.*;
-
 import java.util.*;
-import java.util.List;
 
 
 /**
@@ -12,21 +9,23 @@ public class BookingDriver {
     public static void main (String args []){
 
         Booking b = new Booking();
-        b.addInspector("John",35.00,Sport.TRX,DayOfClass.TUESDAY);
-        b.addInspector("Mary",30.50,Sport.SPINNING,DayOfClass.MONDAY);
-        b.addInspector("Neil",10.00,Sport.AEROBICS,DayOfClass.WEDNESDAY);
-        b.addInspector("Peter",35.00,Sport.WEIGHTS,DayOfClass.THURSDAY);
-        b.addInspector("Colin",55.00,Sport.SWIMMING,DayOfClass.FRIDAY);
+        b.addInstructor("John",35.00,Sport.TRX,DayOfClass.TUESDAY);
+        b.addInstructor("Mary",30.50,Sport.SPINNING,DayOfClass.MONDAY);
+        b.addInstructor("Neil",10.00,Sport.AEROBICS,DayOfClass.WEDNESDAY);
+        b.addInstructor("Peter",35.00,Sport.WEIGHTS,DayOfClass.THURSDAY);
+        b.addInstructor("Colin",55.00,Sport.SWIMMING,DayOfClass.FRIDAY);
 
 //adding same specs for testing
-        b.addInspector("Clare",10.50,Sport.SPINNING,DayOfClass.MONDAY);
+        b.addInstructor("Clare",10.50,Sport.SPINNING,DayOfClass.MONDAY);
 
 
 
+        InstructorSpec specsOfInstructorToBook = new InstructorSpec(Sport.SPINNING,DayOfClass.MONDAY);
 
-        ArrayList<Instructor> instructorToBook = b.bookInstructor(Sport.SPINNING,DayOfClass.MONDAY);
+        List instructorToBook =  b.bookInstructor(specsOfInstructorToBook);
 
 
+        System.out.print("ide"+ instructorToBook.size());
 
         if (!instructorToBook.isEmpty()){
             System.out.print("Available instructors: \n\n");
