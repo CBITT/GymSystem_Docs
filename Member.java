@@ -5,67 +5,55 @@ package OOAD;
  *
  * @author Peter Mikulasko
  */
-public class Member {
-    private String name;
-    private String surname;
-    private int age;
-    private String gender;
+public class Member extends Person {
     private String emergencyContact;
-    
-    public Member(){    
-    }
-    
-    public Member(String name, String surname, int age, String gender, String emergencyContact) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
-        this.gender = gender;
+    private String membershipType;
+    private String status;
+
+    public Member(){}
+
+
+
+    public Member(String name, String surname, int age, Gender gender,String emergencyContact, String membershipType, String status) {
+        super(name,surname,age,gender);
         this.emergencyContact = emergencyContact;
-
+        this.membershipType = membershipType;
+        this.status = status;
     }
 
-    public String getName() {
-        return name;
+
+
+    public String getEmergencyContact() {
+        return emergencyContact;
     }
 
-    public void setName(String name) {
-        this.name = name;
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
     }
 
-    public String getSurname() {
-        return surname;
+    public String getMembershipType() {
+        return membershipType;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public void setMembershipType(String membershipType) {
+        this.membershipType = membershipType;
     }
 
-    public int getAge() {
-        return age;
+    public String getStatus() {
+        return status;
     }
 
-    public void setAge(int age) {
-        if (age <= 0 || age > 150)
-            throw new IllegalArgumentException("Age is not valid"); 
-        this.age = age;
+    public void setStatus(String status) {
+        this.status = status;
     }
 
-    public String getGender(){ return gender; }
-
-    public void setGender(String gender) { this.gender = gender; }
-
-    public String getEmergencyContact() { return emergencyContact; }
-
-    public void setEmergencyContact(String emergencyContact) { this.emergencyContact = emergencyContact; }
 
     @Override
-    public String toString() {        
-        return "Member Details:" +"\n" + getName() + ", "
-                +"\n" + getSurname() + ", "
-                +"\n" + getAge() + ", "
-                +"\n" + getGender() + ", "
-                +"\n" + getEmergencyContact();
+    public String toString() {
+        return "Member Details:"
+                +"\n" + super.toString() + ", "
+                +"\n" + getEmergencyContact() + ", "
+                +"\n" + getMembershipType() + ", "
+                +"\n" + getStatus();
     }
-    
-    
 }
