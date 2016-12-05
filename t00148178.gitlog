@@ -1,3 +1,30 @@
+commit a5dfe1f2aacf586cc50c3055a02f0eafef7609f4
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Mon Dec 5 00:48:39 2016 +0000
+
+    renamed usecase17
+
+commit 5fd9cba3e9c160bd2bed2a1785467ccfa620f6ec
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Mon Dec 5 00:47:10 2016 +0000
+
+    changes made
+    
+    introduced Person class
+    added new Fields to Member class:
+    emergencyContact
+    membershipType
+    status
+    
+    Value safety
+    introduced new ENUM for Gender
+
+commit 5943f3ca942d7c9d27ebfde2890d2cc2f387925b
+Author: t00148178 <tcc1011pm@yahoo.com>
+Date:   Sat Dec 3 22:03:32 2016 +0000
+
+    git logs added
+
 commit 2619ddaeef343e67bf14e67674369f093088d754
 Author: t00148178 <tcc1011pm@yahoo.com>
 Date:   Sat Dec 3 21:40:33 2016 +0000
