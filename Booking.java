@@ -26,20 +26,23 @@ public List instructors;
 
         List availableInstructors = new LinkedList();
 
+
         for (Iterator it = instructors.iterator();it.hasNext();){
             Instructor instructor = (Instructor)it.next();
 
+
+
             InstructorSpec instructorSpec = instructor.getSpecs();
 
-          //  if (spec.getSport()== instructorSpec.getSport() && spec.getDayOfClass() == instructorSpec.getDayOfClass())
+            if (spec.getSport()== instructorSpec.getSport() && spec.getDayOfClass() == instructorSpec.getDayOfClass())
 
                 availableInstructors.add(instructor);
 
-                return availableInstructors;
+
 
 
         }
-        return null;
+        return availableInstructors;
     }
 
 }
