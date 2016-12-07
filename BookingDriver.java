@@ -18,33 +18,9 @@ public class BookingDriver {
 //adding same specs for testing
         b.addInstructor("Clare",10.50,Sport.SPINNING,DayOfClass.MONDAY);
 
+        InstructorSpec specsOfInstructorToBook = new InstructorSpec(Sport.AEROBICS,DayOfClass.WEDNESDAY);
 
-
-        InstructorSpec specsOfInstructorToBook = new InstructorSpec(Sport.SPINNING,DayOfClass.MONDAY);
-
-        List instructorToBook =  b.bookInstructor(specsOfInstructorToBook);
-
-
-        System.out.print("ide"+ instructorToBook.size());
-
-        if (!instructorToBook.isEmpty()){
-            System.out.print("Available instructors: \n\n");
-
-            for (Iterator i = instructorToBook.iterator(); i.hasNext(); ) {
-                Instructor instructor = (Instructor) i.next();
-
-                InstructorSpec spec = instructor.getSpecs();
-                System.out.println("Name: " +
-                        instructor.getName()+ "\nPrice per session: €"+instructor.getPricePerClass()
-                        + "\nSport: "+spec.getSport()+ "\nDay of training: "+ spec.getDayOfClass());
-            }
-        } else {
-            System.out.println("Sorry, no Instructors available");
-        }
-
-
-
-
+        b.bookInstructor(specsOfInstructorToBook);
 
     }
 }

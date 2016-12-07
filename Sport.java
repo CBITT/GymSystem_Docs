@@ -14,6 +14,7 @@ public enum Sport {
             case YOGA: return "yoga";
             case PILATES: return "pilates";
             case FITBALL: return "fitball";
+            case AEROBICS: return "aerobics";
             default: return "unspecified";
         }
     }
