@@ -38,22 +38,26 @@ public List instructors;
 
         }
 
-        if (!availableInstructors.isEmpty()){
-            System.out.print("Available instructors "+availableInstructors.size()+" : \n\n");
-
-            for (Iterator i = availableInstructors.iterator(); i.hasNext(); ) {
-                Instructor instructor = (Instructor) i.next();
-
-
-                System.out.println("Name: " +
-                        instructor.getName()+ "\nPrice per session: €"+instructor.getPricePerClass()
-                        + "\nSport: "+spec.getSport()+ "\nDay of training: "+ spec.getDayOfClass());
-            }
-        } else {
+         if (!availableInstructors.isEmpty()){
+                 printAvailableInstructors(availableInstructors, spec);
+         }
+         else {
             System.out.println("Sorry, no Instructors available");
         }
-
         return availableInstructors;
+    }
+
+    private void printAvailableInstructors(List availableInstructors, InstructorSpec spec) {
+        System.out.print("Available instructors "+availableInstructors.size()+" : \n\n");
+
+        for (Iterator i = availableInstructors.iterator(); i.hasNext(); ) {
+            Instructor instructor = (Instructor) i.next();
+
+
+            System.out.println("Name: " +
+                    instructor.getName()+ "\nPrice per session: €"+instructor.getPricePerClass()
+                    + "\nSport: "+spec.getSport()+ "\nDay of training: "+ spec.getDayOfClass());
+        }
     }
 
 }
