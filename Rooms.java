@@ -4,9 +4,9 @@ public class Rooms{
 	
 	
 	Random r = new Random();
-	String room;
-	int capacity = 30;
-	int currCapacity;
+	private String room;
+	private int capacity = 30;
+	private int currCapacity;
 
 	int min = 0;
 	int max = capacity;
