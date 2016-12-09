@@ -47,15 +47,32 @@ public class Person {
 //    }
 
     public void setAge(int age) {
-        if (age <= 0 || age > 150) {
+        if (age <= belowValidAge() || age > aboveValidAge()) {
             throw new IllegalArgumentException("Age is not valid");
-        } else if(age <= 16 ){
+        } else if(age <= ageBelowLimit() ){
             throw new IllegalArgumentException("You are too young to register");
-        } else if(age >= 75) {
+        } else if(age >= ageAboveLimit()) {
             throw new IllegalArgumentException("You are too old to register");
         } else {
             this.age = age;
         }
+    }
+
+    public int belowValidAge(){
+        return 0;
+    }
+
+    public int aboveValidAge(){
+        return 150;
+    }
+
+
+    public int ageAboveLimit(){
+        return 75;
+    }
+
+    public int ageBelowLimit(){
+        return 16;
     }
 
     public Gender getGender() {
