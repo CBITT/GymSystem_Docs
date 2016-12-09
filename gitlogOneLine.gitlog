@@ -1,0 +1,59 @@
+2619dda refactor package
+e8f8b45 added new fields gender and emergencyContect
+0f14277 Merge branch 'master' into Peter-Mikulasko
+4fe8f05 Merge remote-tracking branch 'refs/remotes/CBITT/master'
+75d4c94 Merge pull request #10 from t00148178/master
+a99d88a added registerMembers class
+568b9e5 age check added age check added to allow only real age number
+04e6c47 class name renamed refactoring class RegisterMember to Member
+f19107f Merge pull request #9 from t00148178/master
+4b5f7cf Added RegisterMember
+ea6d7c7 Merge pull request #8 from CBITT/csaba_gym_sys
+c443e94 Membership class created
+3fa0269 Merge pull request #1 from t00148178/uc-from-peter
+4ecb616 Delete test2.html
+4c87b95 Removed possible attributes
+fa6dee3 Merge remote-tracking branch 'origin/master'
+b4ee6a0 UC5 minor change
+f324737 Delete usecase12.html
+f73048b Delete usecase11.html
+2ff96a2 Rename usecase18.html to uc18.html
+501f041 Update Documents.html
+1f1b162 Delete usecase17.html
+af62874 UC 15 calc salary modified
+119a8c6 create usecase18.html
+5e77edf create usecase17.html
+795da15 create usecase10.html
+a970267 new UC Set Workout added
+152ca84 Use Case 15 - Calculate salary of employees / Casual Use Case
+de6919e Use Case 5 - Buy Membership / Fully dressed Use Case
+ab21c81 UC 7 replaced with new UC. UC 14 has been moved to the member section. UC 16 has been removed.
+ff3b36f Merge remote-tracking branch 'origin/master'
+ee9d922 Use Case 19 - Top up account / Brief Use Case
+2f1f07c Merge pull request #5 from CBITT/Neil-Sankar
+373b3b1 Use Case - Set Workout - Fully Dressed
+6285c77 Use Case - Unban Member
+c06184d Add files via upload
+aaaf20b Merge pull request #4 from CBITT/Peter-Mikulasko
+b251d96 Update Documents.html
+35e4a83 Use Case 5 - Buy Membership / Fully dressed Use Case
+2c4841e Use Case 5 - Buy Membership / Fully dressed Use Case
+a223550 Use Case 5 - Buy Membership / Fully dressed Use Case
+0c26aba Use Case 4 - Check remaining sessions / Brief Use Case
+addacbe Use Case 3 - Book Equipment / Casual Use Case
+2dde6e8 Use Case 2 - Book Room / Casual Use Case
+15a0478 New use case added - top up account Numbering fixed
+b2fa519 Merge pull request #3 from t00148178/uc-from-peter
+8b77d68 added pre/post comditions
+43bc101 uc9 added
+bb8d15a Book room modified
+1442ead Book room modified
+b03383c Merge remote-tracking branch 'origin/master'
+881dbac Booking Instructor - date is an option, must be clarified
+f4665bd added use case 1 fro brief and fully dressed
+f8ad70b Merge pull request #1 from njsankar/patch-1
+ac8bf96 create test2.html
+0a1d3b7 Create README.md
+af71ead all use cases
+ea8867f use case - create account
+7a68c8f Initial commit
