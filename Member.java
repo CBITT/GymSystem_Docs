@@ -1,62 +1,59 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
-package gymsystem;
+
+package OOAD;
 
 /**
  *
  * @author Peter Mikulasko
  */
-public class Member {
-    private String name;
-    private String surname;
-    private int age;
+public class Member extends Person {
+    private String emergencyContact;
+    private String membershipType = null;
+    private String status = "Active";
 
-    
-    public Member(){    
-    }
-    
-    public Member(String name, String surname, int age) {
-        this.name = name;
-        this.surname = surname;
-        this.age = age;
+    public Member(){}
 
-    }
 
-    public String getName() {
-        return name;
+
+    public Member(String name, String surname, int age, Gender gender,String emergencyContact, String membershipType, String status) {
+        super(name,surname,age,gender);
+        this.emergencyContact = emergencyContact;
+        this.membershipType = membershipType;
+        this.status = status;
     }
 
-    public void setName(String name) {
-        this.name = name;
+
+
+    public String getEmergencyContact() {
+        return emergencyContact;
     }
 
-    public String getSurname() {
-        return surname;
+    public void setEmergencyContact(String emergencyContact) {
+        this.emergencyContact = emergencyContact;
     }
 
-    public void setSurname(String surname) {
-        this.surname = surname;
+    public String getMembershipType() {
+        return membershipType;
     }
 
-    public int getAge() {
-        return age;
+    public void setMembershipType(String membershipType) {
+        this.membershipType = membershipType;
     }
 
-    public void setAge(int age) {
-        if (age <= 0 || age > 150)
-            throw new IllegalArgumentException("Age is not valid"); 
-        this.age = age;
+    public String getStatus() {
+        return status;
     }
+
+    public void setStatus(String status) {
+        this.status = status;
+    }
+
 
     @Override
-    public String toString() {        
-        return "Member Details:" +"\n" + getName() + ", "
-                +"\n" + getSurname() + ", "
-                +"\n" + getAge() + ", ";
+    public String toString() {
+        return "Member Details:"
+                +"\n" + super.toString() + ", "
+                +"\n" + getEmergencyContact() + ", "
+                +"\n" + getMembershipType() + ", "
+                +"\n" + getStatus();
     }
-    
-    
 }
