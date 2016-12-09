@@ -4,13 +4,13 @@ import javax.swing.JOptionPane;
 
 public class Member{
     
-    int memID = 0;
-    String name;
-    int age;
-    String memType;
-    int memCount;
-    int reportCount = 0;
-    boolean banned = false;
+   private int memID = 0;
+   private String name;
+   private int age;
+   private String memType;
+   private int memCount;
+   private int reportCount = 0;
+   private boolean banned = false;
     
     /*I have added reportCount and the boolean banned in order to implement a
     banning feature for the members class.
