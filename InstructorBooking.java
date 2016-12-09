@@ -1,16 +1,15 @@
-import java.util.ArrayList;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
+import org.junit.Test;
+
+import java.util.*;
 
 /**
  * Created by BangoCs on 11/25/2016.
  */
-public class Booking {
+public class InstructorBooking extends BookingGeneral{
 
 public List instructors;
 
-    public  Booking(){
+    public InstructorBooking(){
 
         instructors = new LinkedList();
     }
@@ -60,6 +59,18 @@ public List instructors;
         }
     }
 
+    @Override
+    void generateRefNum() {
+        Random random = new Random();
+        int refNum = random.nextInt((9999999 - 1000000) + 1) + 1000000;
+        referenceNum = refNum;
+    }
+
+    @Override
+    int getReferenceNum() {
+        return referenceNum;
+    }
 }
+
 
 
