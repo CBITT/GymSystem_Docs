@@ -47,9 +47,15 @@ public class Person {
 //    }
 
     public void setAge(int age) {
-        if (age <= 0 || age > 150)
+        if (age <= 0 || age > 150) {
             throw new IllegalArgumentException("Age is not valid");
-        this.age = age;
+        } else if(age <= 16 ){
+            throw new IllegalArgumentException("You are too young to register");
+        } else if(age >= 75) {
+            throw new IllegalArgumentException("You are too old to register");
+        } else {
+            this.age = age;
+        }
     }
 
     public Gender getGender() {
