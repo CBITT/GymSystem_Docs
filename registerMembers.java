@@ -11,15 +11,24 @@ import java.util.List;
  * @author Peter Mikulasko
  */
 public class registerMembers {
-    private List members;
+    private List<Member> members;
     
     public registerMembers(){
 
-        members = new LinkedList();
+        members = new LinkedList<>();
     }
     
     public void addMember(String name, String surname, int age, Gender gender, String emergencyContact, String membershipType, String status){
         Member member = new Member(name, surname, age, gender, emergencyContact, membershipType, status);
         members.add(member);
     }
+
+    public void displayAllMembers(){
+     for(Member member: members)
+     {
+         System.out.println(member);
+     }
+    }
+
+
 }

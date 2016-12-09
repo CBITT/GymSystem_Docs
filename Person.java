@@ -1,7 +1,7 @@
 package OOAD;
 
 /**
- * Created by Server on 04/12/2016.
+ * Created by Peter Mikulasko
  */
 public class Person {
     private String name;
@@ -23,8 +23,10 @@ public class Person {
     }
 
     public void setName(String name) {
+
         this.name = name;
     }
+
 
     public String getSurname() {
         return surname;
@@ -37,6 +39,12 @@ public class Person {
     public int getAge() {
         return age;
     }
+
+//    public void setAge(int age) {
+//        if (age <= 0 || age > 150)
+//            throw new IllegalArgumentException("Age is not valid");
+//        this.age = age;
+//    }
 
     public void setAge(int age) {
         if (age <= 0 || age > 150)

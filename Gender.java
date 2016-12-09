@@ -1,7 +1,7 @@
 package OOAD;
 
 /**
- * Created by Server on 03/12/2016.
+ * Created by Peter Mikulasko
  */
 public enum Gender {
     MALE, FEMALE;
