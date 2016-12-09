@@ -4,7 +4,7 @@
      <title>Ban Member</title>
   </head>
   <body>
-  <h1><b>Use Case 11 - Ban Member (Brief & Casual)</b></h1>
+  <h1><b>Use Case 11 - Ban Member (Brief & Casual & Fully Dressed)</b></h1>
   <p><strong>Actors: </strong>Admin, Gym System</p>
   <h2>Brief</h2>
   <p>Admin can ban member from gym system for an indefinite amount of time.<p>
@@ -15,7 +15,22 @@
      <ul>If already banned, prompt "Member is already banned".</ul>
      <ul>If not already banned, ban member and prompt "Member successfully banned"</ul>
      When a member is banned they will be unable to login in to the system until
-     they are unbanned. Their account is effectively locked. 
+     they are unbanned. Their account is effectively locked.
+    
+  <p><Strong>Precondition: </Strong>1) Member must first be logged in. 2)Member must first have a membership. 3)Member must not already be banned</p>
+  <p><strong>Goals: </strong>Admin is able to ban member from the system</p>
+  <p><strong>Business Value: </strong>4</p>
+  <p><strong>Business Risk: </strong>4</p>
+  <p><strong>Tasks: </strong>
+  <ol><li><strong>Gym System: </strong>The Gym system displays a text box and prompts the user to enter the ID of the member they are searching for</li>
+    <li><strong>Admin: </strong>Types in the ID number and runs a search</li>   
+    <li><strong>Gym System: </strong>Returns all information about this member</li> 
+    <li><strong>Admin: </strong>Admin reads and confirms if this is the member they were looking for</li>
+    <li><strong>Gym System: </strong>Prompts the user if they want to report this user</li>
+    <li><strong>Admin: </strong>Admin can select yes to confirm</li>
+    <li><strong>Gym System: </strong>System increments how many times the member has been reported and confirms that member has been reported</li>
+    </ol>
+    <p><Strong>Postcondition: If member is reported 3 times, the member is banned from the system. </Strong></p>
   
 
   </body>
