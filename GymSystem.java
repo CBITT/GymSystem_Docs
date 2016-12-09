@@ -19,7 +19,7 @@ public class GymSystem {
         
         newMember.setName("Peter");
         newMember.setSurname("Mikulasko");
-        newMember.setAge(27);
+        newMember.setAge(11);
         newMember.setGender(Gender.MALE);
         newMember.setEmergencyContact("0123456");
         newMember.setMembershipType("none");
@@ -27,6 +27,13 @@ public class GymSystem {
 
         
         System.out.print(newMember.toString());
+
+        registerMembers rM = new registerMembers();
+
+        rM.addMember("Peter", "mikulasko", 11, Gender.MALE, "0123456", "none", "active");
+        System.out.println("............");
+        System.out.println("linklist");
+        rM.displayAllMembers();
 
 
 

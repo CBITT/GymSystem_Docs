@@ -7,8 +7,8 @@ package OOAD;
  */
 public class Member extends Person {
     private String emergencyContact;
-    private String membershipType;
-    private String status;
+    private String membershipType = null;
+    private String status = "Active";
 
     public Member(){}
 
